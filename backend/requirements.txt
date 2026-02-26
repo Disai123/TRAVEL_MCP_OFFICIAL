@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+langchain
+langchain-openai
+langgraph
+httpx
+python-dotenv
+pydantic
+nest-asyncio
+pandas
+# mcp logic is implemented via httpx in tools.py
