@@ -67,7 +67,6 @@ frontend/.vite/
 # ──────────────────────────────────────────
 # Hotel dataset (37 MB CSV — too large for GitHub)
 backend/travel_sample.csv
-*.csv
 *.sqlite
 *.db
 

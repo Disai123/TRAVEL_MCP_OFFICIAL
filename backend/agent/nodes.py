@@ -1,10 +1,10 @@
-from langchain_openai import ChatOpenAI
+from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.messages import SystemMessage, HumanMessage
 from .state import TripState
 from .tools import TOOLS
 
 # Initialize Model
-llm = ChatOpenAI(model="gpt-4o-mini")
+llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash-lite")
 llm_with_tools = llm.bind_tools(TOOLS)
 
 # --- Nodes ---
