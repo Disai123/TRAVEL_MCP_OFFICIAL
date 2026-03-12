@@ -84,6 +84,8 @@ async def search_proxy(req: SearchRequest):
         import json
         return json.loads(res_json)
     except Exception as e:
+        import traceback
+        traceback.print_exc()
         raise HTTPException(status_code=500, detail=str(e))
 
 if __name__ == "__main__":

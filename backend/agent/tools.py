@@ -32,7 +32,7 @@ async def search_places_impl(query: str) -> str:
             simplified = [{"name": p.get("display_name"), "lat": float(p.get("lat")), "lon": float(p.get("lon"))} for p in data]
             return json.dumps(simplified)
         except Exception as e:
-            return f"Error: {e}"
+            raise Exception(f"Nominatim Search Failed: {e}")
 
 async def _get_weather_impl(location_name: str) -> str:
     """Internal implementation of Weather."""
